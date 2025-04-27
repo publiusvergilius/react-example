@@ -5,17 +5,24 @@ import App from './App.tsx'
 import Home from './pages/Home'
 import Users from './pages/Users/index.tsx'
 import Playground from './pages/Playground/index.tsx'
+import Posts from './pages/Posts/index.tsx'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
+const queryClient = new QueryClient()
 createRoot(document.getElementById('root')!).render(
+
   <StrictMode>
+  <QueryClientProvider client={queryClient}>
 	  <BrowserRouter>
 	  	<Routes>
 			<Route path='/' element={<App />}>
 				<Route index element={<Home />} />
 				<Route path='/users' element={<Users />} />
 				<Route path='/playground' element={<Playground />} />
+				<Route path='/posts' element={<Posts />} />
 			</Route > 
 	  	</Routes>
 	  </BrowserRouter>
+  </QueryClientProvider>
   </StrictMode>,
 )

@@ -1,5 +1,5 @@
 import { it, expect, describe, beforeEach } from 'vitest';
-import { cleanup, getByText, render, screen } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import  Playground  from './index';
 import '@testing-library/jest-dom/vitest';
 import { userEvent } from '@testing-library/user-event';

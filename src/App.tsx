@@ -20,14 +20,19 @@ export default function App() {
 				<Menu.Item key='3'>
 					<Link to="/users" className={styles.menuItem}>Users</ Link> 
 				</Menu.Item>
+				<Menu.Item key='4'>
+					<Link to="/posts" className={styles.menuItem}>Posts</ Link> 
+				</Menu.Item>
 			</Menu>
 	  	</Header>
 		<Content>
 			<Outlet />
 		</Content>
+		{/*
 		<Footer> 
 			Publius Vergilius Maro
 		</ Footer> 
+		*/}
 	  </Layout>
 	  </Flex>
 	)

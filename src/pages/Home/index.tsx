@@ -1,8 +1,6 @@
 import { useState } from "react"
 
 export default function Home() {
-
-	
 	return ( 
 		<>
 			<Login />
@@ -10,11 +8,9 @@ export default function Home() {
        )
 }
 
-type LoginProps = {}
-
 export function Login () {
 	const [isLogged, setIsLogged] = useState(false)
-	const [username, setUsername] = useState(null)
+	const [username, setUsername] = useState("")
 	function handleLogin(){
 		setIsLogged(true)
 	}
@@ -25,7 +21,7 @@ export function Login () {
 			{ !isLogged ?
 			<>
 				<button onClick={handleLogin}>Login</button>
-				<input value={username || ""} onChange={(v) => setUsername(v.target.value)}/>
+				<input value={username} onChange={(v) => setUsername(v.target.value)}/>
 			</>
 			: null}
 		</>
