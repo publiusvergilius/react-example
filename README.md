@@ -1,6 +1,6 @@
 # React Template
 A minimal and powerful React template bootstrapped with Vite, TypeScript, React Router, and React Query.
-Designed for fast, scalable, and maintainable front-end developmen
+Designed for fast, scalable, and maintainable front-end development.
 
 # Features
 ⚡ Vite — Ultra-fast build tool and dev server.
@@ -17,7 +17,7 @@ Designed for fast, scalable, and maintainable front-end developmen
 
 # Getting Started
 ## 1. Clone the repository
-`git clone https://github.com/publiusvergilius/react-template.git
+`git clone https://github.com/publiusvergilius/react-template.git &&
 cd react-template`
 ## 2. Install dependencies
 `npm install`
@@ -27,5 +27,5 @@ cd react-template`
 # Testing
 Run unit tests with:
 `npm run test
-#or
+or
 npm run test:ui`
