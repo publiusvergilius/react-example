@@ -7,6 +7,7 @@ import Users from './pages/Users/index.tsx'
 import Playground from './pages/Playground/index.tsx'
 import Posts from './pages/Posts/index.tsx'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import Comments from './pages/Commments/index.tsx'
 
 const queryClient = new QueryClient()
 createRoot(document.getElementById('root')!).render(
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')!).render(
 				<Route path='/users' element={<Users />} />
 				<Route path='/playground' element={<Playground />} />
 				<Route path='/posts' element={<Posts />} />
+				<Route path='/comments' element={<Comments />} />
 			</Route > 
 	  	</Routes>
 	  </BrowserRouter>

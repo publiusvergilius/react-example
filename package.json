@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui --open=false"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.74.4",
